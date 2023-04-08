@@ -20,7 +20,7 @@ searchButton.addEventListener("click", () => {
   humidity.innerText = "Humidity: ";
   weather.innerText = "Weather: ";
   city = searchText.value;
-  let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
+  let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
   getWeatherData(url);
 });
 
